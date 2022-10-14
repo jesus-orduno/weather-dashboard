@@ -27,7 +27,30 @@
   <h1 class="display-4">Weather Dashboard</h1>
 </nav>
 
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-3" id="search">
+      <div class ="card" id="locationCard">
+        <div class="card-header">
+          <div class="form-group">
+            <h4>Search for a City:</h4>
+            <form id="searchForm">
+              <input type="text" class="form-control" id="cityName" placeholder="Enter City Name" />
+              <button type="submit" id="searchBtn" class="btn btn-primary">Search</button>
+            </form>
+          </div>
+          &emsp;
+          <div class="form-group">
+            <h4>Search History:</h4>
+            <ul id="searchHistory"></ul>
+          </div>
+        </div>
+      </div>
+    </div>
 
+    
+  </div>
+</div>
 
 <body>
   
