@@ -23,36 +23,95 @@
     <title>Weather Dashboard</title>
 </head>
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <h1 class="display-4">Weather Dashboard</h1>
-</nav>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <h1 class="display-4">Weather Dashboard</h1>
+  </nav>
 
-<div class="container-fluid">
-  <div class="row">
-    <div class="col-md-3" id="search">
-      <div class ="card" id="locationCard">
-        <div class="card-header">
-          <div class="form-group">
-            <h4>Search for a City:</h4>
-            <form id="searchForm">
-              <input type="text" class="form-control" id="cityName" placeholder="Enter City Name" />
-              <button type="submit" id="searchBtn" class="btn btn-primary">Search</button>
-            </form>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-3" id="search">
+        <div class ="card" id="locationCard">
+          <div class="card-header">
+            <div class="form-group">
+              <h4>Search for a City:</h4>
+              <form id="searchForm">
+                <input type="text" class="form-control" id="cityName" placeholder="Enter City Name" />
+                <button type="submit" id="searchBtn" class="btn btn-primary">Search</button>
+              </form>
+            </div>
+            &emsp;
+            <div class="form-group">
+              <h4>Search History:</h4>
+              <ul id="searchHistory"></ul>
+            </div>
           </div>
-          &emsp;
-          <div class="form-group">
-            <h4>Search History:</h4>
-            <ul id="searchHistory"></ul>
+        </div>
+      </div>
+
+      <div class="col-md-9" id="currentLocation">
+        <div class="card text-center" id="currentWeather">
+          <div class="card-header" id="today"></div>
+          <div class="card-body">
+            <div class="row">
+              <div class="col-md-4">
+                <h4 id="cityName"></h4>
+                <img id="icon" src="" alt="weather icon" />
+                <p id="temp"></p>
+                <p id="humidity"></p>
+                <p id="windSpeed"></p>
+                <p id="uvIndex"></p>
+              </div>
+              <hr class="d-md-none" />
+              <div class="row">
+                <div class="col-md-4" id="fiveDay">
+                  <h4>5-Day Forecast:</h4>
+                  <div class="card-deck" id="forecast">
+                    <div class="card-body">
+                      <div class="row">
+                        <div class="col-md-4">
+                          <p id="date1"></p>
+                          <img id="icon1" src="" alt="weather icon" />
+                          <p id="temp1"></p>
+                          <p id="humidity1"></p>
+                        </div>
+                        <div class="col-md-4">
+                          <p id="date2"></p>
+                          <img id="icon2" src="" alt="weather icon" />
+                          <p id="temp2"></p>
+                          <p id="humidity2"></p>
+                        </div>
+                        <div class="col-md-4">
+                          <p id="date3"></p>
+                          <img id="icon3" src="" alt="weather icon" />
+                          <p id="temp3"></p>
+                          <p id="humidity3"></p>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-4">
+                          <p id="date4"></p>
+                          <img id="icon4" src="" alt="weather icon" />
+                          <p id="temp4"></p>
+                          <p id="humidity4"></p>
+                        </div>
+                        <div class="col-md-4">
+                          <p id="date5"></p>
+                          <img id="icon5" src="" alt="weather icon" />
+                          <p id="temp5"></p>
+                          <p id="humidity5"></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
-
-    
-  </div>
-</div>
-
-<body>
-  
+  </div>  
 </body>
+
 </html>
